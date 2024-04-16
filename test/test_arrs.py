@@ -16,5 +16,12 @@ class ArsTestCase(unittest.TestCase):
 
 
 
+    def test_words(self):
+        self.assertEqual(arrs.words(collection = {'a':1, 'b':2, 'c':3}, key = 'a', default = 'git'),1)
+        self.assertEqual(arrs.words(collection = {'a':1, 'b':2, 'c':3}, key = 'd', default = 'git'),'git')
 
 
+
+
+
+#collection, key, default='git'

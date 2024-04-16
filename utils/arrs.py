@@ -44,3 +44,14 @@ def my_slice(coll, start=None, end=None):
         normalized_end = end
 
     return coll[normalized_start:normalized_end]
+
+def words(collection, key, default='git'):
+    if key in collection.keys():
+        return collection[key]
+    else:
+        return default
+
+
+
+
+
